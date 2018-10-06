@@ -1,0 +1,59 @@
+
+body {
+	margin: 0;
+}
+h1, h2 {
+	margin: 0;
+}
+header h1,
+header h2 {
+	display: inline-block;
+}
+header h1 {
+	padding-right: 10px;
+	color: #dd0;
+    font-size: 54px;
+    font-weight: 300;
+}
+header h2 {
+	color: #888;
+    font-size: 27px;
+    font-weight: 300;
+    padding: 15px 30px;
+}
+.container {
+	margin: auto;
+	width: 1080px;
+    padding: 54px;
+}
+nav {
+	background: black;
+}
+nav a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+}
+nav a:hover {
+	background: #900;
+}
+.articles {
+	float: left;
+	height: 50px;
+	width: 300px;
+}
+h3 {
+	color: #cccccc;
+    font-size: 36px;
+    font-weight: 300;
+}
+h4 {
+	color: #000;
+    font-size: 36px;
+    font-weight: 300;
+}
+.articles h4:hover {
+	color: #d00;
+}
