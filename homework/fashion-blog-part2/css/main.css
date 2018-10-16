@@ -28,10 +28,13 @@ header h2 {
 }
 nav {
 	background: black;
+	padding: 20px 40px;
 }
 nav a {
     color: #fff;
+    font-family: helvetica;
     font-size: 24px;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     width: 150px;
@@ -57,3 +60,17 @@ h4 {
 .articles h4:hover {
 	color: #d00;
 }
+.aside {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
