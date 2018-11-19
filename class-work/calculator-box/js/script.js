@@ -24,9 +24,10 @@ var total = 0
 
 
 function addTen () {
-	//update the value of 'total'
+	//update the value of 'total' 
+	//(variable reassignment)
 	total = total + 10
-	//update the dom
+	//update the dom (UI)
 	$('#out').html(total)
 }
 
@@ -68,6 +69,11 @@ function reset () {
 	//reassign total to 0
 	total = 0
 	$('#out').html(total)
+	//or: $('#out').css('background','white').html(total)
+	//is called jQuerychain
+	//or: $('#out')
+	//		.css('background','white')
+	//		.html(total)
 }
 
 $('#a10').click(addTen)
