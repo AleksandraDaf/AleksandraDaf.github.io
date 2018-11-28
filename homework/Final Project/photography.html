@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles_photo.css">
 	<style>
 		i {
 			color: red;
@@ -13,28 +13,173 @@
 </head>
 <body>
 	<header>
-		<h1>SY Art</h1>
+		<h1 style="text-shadow: 4px 2px 2px #a7d3ff">Symphony Art</h1>
 		<nav>
 			<a href="index.html">Home</a>
 		</nav>
 	</header>
-	<section class="headlines">
-		<h2>Artworks</h2>
+	<div class="headlines">
+		<a class="bold" href=artworks.html">Artworks</a>
 		<nav>
-			<a href="colors.html">Paintings</a>
-			<a href="lines.html">Sketches</a>
-			<a href="pics.html">Photography</a>
+			<a href="paintings.html">Paintings</a>
+			<a href="sketches.html">Sketches</a>
+			<a href="photography.html">Photography</a>
 		</nav>
-	</section>
+	</div>
+	<p class="photopage">
+		Photography
+	</p>
+
+<div class="container">
+	<div class="mySlides">
+    	<div class="numbertext">1 / 15</div>
+		<img src="imgphoto/cityview_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">2 / 15</div>
+		<img src="img/centralpark_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">3 / 15</div>
+		<img src="../img/clock_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">4 / 15</div>
+		<img src="img/fountain_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">5 / 15</div>
+		<img src="img/baysunset_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">6 / 15</div>
+		<img src="img/bear_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">7 / 15</div>
+		<img src="img/irises_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">8 / 15</div>
+		<img src="img/mauntauk_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">9 / 15</div>
+		<img src="img/mirror_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">10 / 15</div>
+		<img src="img/oceanwaves_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">11 / 15</div>
+		<img src="img/pier_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">12 / 15</div>
+		<img src="img/skyscrapers_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">13 / 15</div>
+		<img src="img/streetlamp_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">14 / 15</div>
+		<img src="img/taxis_wide.jpg" style="width:100%">
+  	</div>
+  	<div class="mySlides">
+    	<div class="numbertext">15 / 15</div>
+		<img src="img/redsquare_wide.jpg" style="width:100%">
+  	</div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/cityveiw.jpg" style="width:100%" onclick="currentSlide(1)" alt="City View">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="img/centralpark.jpg.jpg" style="width:100%" onclick="currentSlide(2)" alt="Central Park">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/clock.jpg" style="width:100%" onclick="currentSlide(3)" alt="Clock">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/fountain.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fountain">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/baysunset.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bay Sunset">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="img/bear.jpg" style="width:100%" onclick="currentSlide(6)" alt="Bear">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/irises.jpg" style="width:100%" onclick="currentSlide(7)" alt="Irises">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/mauntauk.jpg" style="width:100%" onclick="currentSlide(8)" alt="Mountauk">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/mirror.jpg" style="width:100%" onclick="currentSlide(9)" alt="Mirror">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/oceanwaves.jpg" style="width:100%" onclick="currentSlide(10)" alt="Ocean Waves">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/pier.jpg" style="width:100%" onclick="currentSlide(11)" alt="Pier">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/skyscrapers.jpg" style="width:100%" onclick="currentSlide(12)" alt="Skyscrapers">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/streetlamp.jpg" style="width:100%" onclick="currentSlide(13)" alt="Street Lamp">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/taxis.jpg" style="width:100%" onclick="currentSlide(14)" alt="Taxis">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/redsquare.jpg" style="width:100%" onclick="currentSlide(15)" alt="Red Square">
+    </div>
+  </div>
+</div>
+
+
+
+
 	<div>
-		<ul class=container>
-			<li>
-				<img src="img.photos.jpg"
-			</li>
-		</ul>
+		<img src="img/girl.jpg" alt="girl" usemap="#pics" width="400" height="380">
+		<map name="pics">
+			<area shape="rect" coords="34,44,270,350" alt="Girl" href="girl.htm">
+			<area shape="rect" coords="290,172,333,250" alt="Dog" href="dog.htm">
+  			<area shape="circle" coords="337,300,44" alt="Man with coffee" href="man.htm">
+  		</map>
 	</div>
 	<footer>
-		© 2018 Gallery's Name. Made with <i class="fas fa-heart"></i>
+		© 2018 SYMPHONY ART. Made with <i class="fas fa-heart"></i>
 	</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

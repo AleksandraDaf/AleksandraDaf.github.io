@@ -24,20 +24,33 @@
 */
 
 var total = 0
-
+//1. Add .submit to #entry
 $('#entry').submit(handleSubmit)
-
-function handleSubmit () {
+ 
+//2. Handle the submit event with the following function
+function handleSubmit (event) {
+  //3. Prevent submit's default behavior
   event.preventDefault()
 
+//4. Create a variable, newEntry, to store user input
   var newEntry = $('#newEntry').val()
 
+//5. Call parseInt on newEntry to transform it from a
+//string to a number.
+newEntry = parseInt(newEntry)
+
+//6. append a new <div> to #entries 
 $('#entries').append('<div>' + newEntry + '</div>')
 
-total = total + parseInt(newEntry)
-console.log(total)
-$('#total').html(total)
+//7. Update total variable
+total = total + newEntry
 
+//8. (ctn): update #total element
+$('#total').html('$' + total)
+//console.log(total)
+//$('#total').html(total)
+
+//9. Clear #newEntry
 $('#newEntry').val('')
 }
 

@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Online Gallery</title>
+	<title>Online Gallery SY</title>
  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
@@ -14,71 +14,56 @@
 </head>
 <body>
 	<header>
-		<h1>Online Gallery</h1>
-		<nav>
-			<ul class="menu">
-				<li class="menu-item">
-					<a href="artwork.html">ArtWork</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="paintings.html">Paintings</a>
-						</li>
-						<li>
-							<a href="sketches.html">Sketches</a>
-						</li>
-						<li>
-							<a href="photography.html">Photography</a>
-						</li>
-						<li>
-							<a href="#">Inspiration</a>
-						</li>
-					</ul>
-				</li>
-			</ul>	
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-				<li>
-					<a href="#blog">Blog</a>
-				</li>	
-		</nav>
-	</header>
+	  <h1>Online Gallery</h1>
+	  <ul class="menu">
+	    <li class="dropdown">
+	      <a href="artworks.html">Artworks</a>
+	      <div class="dropdown-content">
+	        <a href="paintings.html">Paintings</a>
+	        <a href="sketches.html">Sketches</a>
+	        <a href="photography.html">Photography</a>
+	        <a href="#">Insipration</a>
+	      </div>
+	    </li>
+	    <li><a href="about.html">About</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	    <li><a href="#blog">Blog</a></li>
+	  </ul>
+  </header>
+
 	<section class="picture">
-		<h2>Symphony Art</h2>
+		<h2 style="text-shadow: 4px 2px 2px #a7d3ff">Symphony Art</h2>
 		<p id="quote">Art, like music, can reach your heart, even if it is closed to others</p>
 	</section>
-	<div class="artwork">
-		<a href="artwork.html">
-			<h3>Artwork</h3>
+	<div class="artworks">
+		<a href="artworks.html">
+			<h3>ArtWorks</h3>
 		</a>
 		<div class="arts-container">
 			<div class="img-box">
 				<a target="_blank" href="img/painting.jpg">
-				<img src="img/painting.jpg" alt="paintings" width="600" height="400">
+				<img src="img/painting.jpg" alt="paintings" width="600" height="400" title="Hello">
 				<span>
 					<h4>Paintings</h4>
-					<p>"Using paints, but depicting with feelings" Jean Chardin</p>
+					<p class="show">"Using paints, but depicting with feelings" Jean Chardin</p>
 					<a class="btn-link" href="paintings.html">More Colors</a>
 				</span>
 			</div>
-			<div class="img-box">
+			<div class="img-box" style="width:430px">
 				<a target="_blank" href="img/sketches.jpg">
 				<img src="img/sketches.jpg" alt="sketches" width="600" height="400">
 				<span>
 					<h4>Sketches</h4>
-					<p>"To find incredible in ordinary things, and usual in incredible ones - this is the real art" Denis Diderot</p>
+					<p class="show">"To find incredible in ordinary things, and usual in incredible ones - this is the real art" Denis Diderot</p>
 					<a class="btn-link" href="sketches.html">More Lines</a>
 				</span>
 			</div>
-			<div class="img-box">
+			<div class="img-box" style="width:430px">
 				<a target="_blank" href="img/photos.jpg">
 				<img src="img/photos.jpg" alt="photography" width="600" height="400">
 				<span>
 					<h4>Photography</h4>
-					<p>The world as it is from my view</p>
+					<p class="show">"Seeing the world through a camera lens"</p>
 					<a class="btn-link" href="photography.html">More pics</a>
 				</span>
 			</div>
@@ -87,29 +72,55 @@
 				<img src="img/inspiration.jpg" alt="inspiration" width="600" height="400">
 				<span>
 					<h4>Inspiration</h4>
-					<p>"The things that inspire us to move toward our dreams"</p>
+					<p class="show">"The things that inspire us to move forward"</p>
 					<a class="btn-link" href="inspiration.html">Get Inspired</a>
 				</span>
 			</div>
 		</div>
 	</div>
-	<section class="About">
-		<img src="img/me.jpg" alt="me">
-		<a href="about.html">
-			<h3>About</h3>
-		</a>
-		<p></p>
-		<a class="btn-link" href="about.html">More...</a>
 
-	</section>
-	<section>
-		<a href="contact.html">
-			<h3>Contact</h3>
+	<section class="about">
+		<a href="about.html">
+			<h5>About</h5>
 		</a>
+		<p class="text">SymphonyArt Gallery - a place containing artworks </br> from artists of different parts of the world</p>
+		<a class="more" href="about.html">More...</a>
+	</section>
+
+	<section class="contact">
+		<a href="contact.html">
+			<h5>Contact</h5>
+		</a>
+		<div class="container">
+			<h4 class="ask">Ask your question</h4>
+			<form action="/action_page.php">
+		    <label for="fname"></label>
+		    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+		    <label for="lname"></label>
+		    <input type="text" id="lname" name="youremail" placeholder="Your email..">
+		    
+		    <label for="lname"></label>
+		    <input type="text" id="lname" name="yourphone" placeholder="Your phone..">
+
+		    <label for="subject">Subject</label>
+		    <select id="subject" name="subject">
+		      <option value="australia">Exhibitions/events</option>
+		      <option value="canada">Partnership</option>
+		      <option value="usa">Buy/Rent Artworks</option>
+		      <option value="australia">Other questions</option>
+		    </select>
+
+		    <label for="subject">Message</label>
+		    <textarea id="message" name="subject" placeholder="Write your message here.." style="height:200px"></textarea>
+
+		    <input type="submit" value="Submit">
+		  	</form>
+		</div>
 	</section>
 
 	<footer>
-		© 2018 Gallery's Name. Made with <i class="fas fa-heart"></i>
+		© 2018 SYMPHONY ART. Made with <i class="fas fa-heart"></i>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>

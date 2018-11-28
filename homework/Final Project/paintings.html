@@ -9,6 +9,43 @@
 		i {
 			color: red;
 		}
+
+		html,
+        body,
+        .container {
+            height: 100%;
+        }
+        .container {
+            height:100%;
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto 200px 40px;
+        }
+        .imagefirst {
+            grid-column-start: 1;
+            grid-column-end: 7;
+        }
+
+        .imagesecond {
+            grid-column-start: 7;
+            grid-column-end: 13;
+        }
+
+        .imagethird {
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+
+        .imagefourth {
+            grid-column-start: 1;
+            grid-column-end: 8;
+        }
+        .imagefifth {
+            grid-column-start: 8;
+            grid-column-end: 13;
+        }
+
 	</style>
 </head>
 <body>
@@ -26,9 +63,32 @@
 			<a href="pics.html">Photography</a>
 		</nav>
 	</section>
+
+	<div class="container">
+        <div class="imagefirst">Image#1</div>
+        <div class="imagesecond">Image#2</div>
+        <div class="imagethird">Image#3</div>
+        <div class="imagefourth">Image#4</div>
+        <div class="imagefifth">Image#5</div>
+        <div class="aside">Image#6</div>
+        <div class="content">Image#7</div>
+        <div class="footer">Image#8</div>
+        <div class="header">Image#9</div>
+        <div class="aside">Image#10</div>
+        <div class="content">Image#11</div>
+        <div class="footer">Image#12</div>
+    </div>
+
+
+
+
+
+
+
+
 	<div>
-		<ul id=container>
-//add full screen size, love sign;			
+		<ul class=container>
+add full screen size, love sign;			
 			<li class=row>
 				<div class=box>
 					<img src="img.paintings.jpg">
@@ -39,6 +99,7 @@
 			</li>
 		</ul>
 	</div>
+
 	<footer>
 		© 2018 Gallery's Name. Made with <i class="fas fa-heart"></i>
 	</footer>

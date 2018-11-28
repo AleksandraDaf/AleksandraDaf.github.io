@@ -1,53 +1,54 @@
 
+// $('.img-box').mouseover(showText)
+// $('.img-box').mouseout(hideText)
 
-var el = document.getElementsByClassName('menu-item');
+// function showText() {
+//   $(this).find('p').fadeIn(800)
+// }
 
-for(var i=0; i<el.length; i++) {
-   el[i].addEventListener("mouseenter", showSub, false);
-   el[i].addEventListener("mouseleave", hideSub, false);
+// function hideText() {
+//   $(this).find('p').fadeOut(800)
+// }
+
+
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function showSub(e) {
-   if(this.children.length>1) {
-      this.children[1].style.height = "auto";
-      this.children[1].style.overflow = "visible";
-      this.children[1].style.opacity = "1";
-   } else {
-      return false;
-   }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function hideSub(e) {
-    if(this.children.length>1) {
-      this.children[1].style.height = "0px";
-       this.children[1].style.overflow = "hidden";
-       this.children[1].style.opacity = "0";
-    } else {
-       return false;
-    }
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-
-
-/*
-<script type="text/javascript" src="js/dropdown-menu.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		jQuery('.dropdown-menu').dropdown-menu();
-	});
-</script>
-
-jQuery('.dropdown-menu').dropdown-menu({
-	theme: 'plain',
-	breakpoint: 768,
-	menuLabel: 'Menu',
-	sticky: false,
-	position: 'static',
-	openingSpeed: 250,
-	closingDelay: 250,
-	showArrows: true,
-	closeBtn: false,
-	scrollbarFix: false
-});	
-*/

@@ -1,0 +1,188 @@
+body, h1, h2, h3 {
+	margin: 0;
+}
+body {
+	background-color: #f6f6f6;
+	font-family: Source Sans Pro;
+	margin: 10px;
+}
+/*
+.fix {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+*/
+header {
+	padding: 10 30px 10 50px;
+	background: #f0e4dd;
+	overflow: auto;
+	/*border-bottom: 2px solid #e1cabb;*/
+	box-shadow: inset 0 -3px 0 rgba(40,40,40,0.2);
+}
+h1 {
+	float: left;
+	color: #f3f9ff;
+	font-family: Merriweather;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+h1:hover {
+	color: #d87c8d;
+}
+a {
+	text-decoration: none;
+}
+nav {
+	float: right;
+	margin-top: 10px;
+}
+nav a {
+	color: #cfa4b1;
+	text-decoration: none;
+	margin-right: 15px;
+	font-family: Merriweather;
+	font-size: 25px;
+}
+nav a:hover {
+	color: #d87c8d;
+}
+
+ {
+	box-sizing: border-box;
+}
+p {
+	font-size: 25px;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+}
+.headlines {
+	padding-top: 15px;
+}
+.bold {
+	color: #cfa4b1;
+	text-decoration: underline;
+	margin-left: 45px;
+	font-family: Merriweather;
+	font-size: 30px;
+}
+.bold:hover {
+	color: #d87c8d; 
+}
+.sketchespage {
+	color: #000;
+	margin-right: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	border: 2px solid black;
+}
+
+
+
+
+
+
+
+h2 {
+	color: #ffffff;
+	font-family: Merriweather;
+	font-size: 50px;
+	text-align: center;
+}
+h3 {
+	font-family: Merriweather;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 15px;
+	text-align: center;
+}
+h4 {
+	color: #4c4443;
+	padding-left: 20px;
+	font-family: 'Bree Serif', serif;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: initial;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	border: 2px solid black;
+    flex: 25%;
+    max-width: 33%;
+    margin-right: 15px;
+    padding: 0 4px;
+    /*align-content: space-between;*/
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    align-self: center;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*
+.container1 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #f6f6f6;
+}
+
+html, body {
+  background-color: #f6f6f6;
+  margin: 10px;
+}
+
+.container1 > div:nth-child(1n) {
+  background-image: url("../img/bmw.jpg");	
+}
+
+.container1 > div:nth-child(2n) {
+  background-image: url("../img/dancer.jpg");
+}
+
+.container1 > div:nth-child(3n) {
+      background-image: url("../img/woman.jpg");
+}
+
+.container1 > div:nth-child(4n) {
+      background-image: url("../img/balerina.jpg");
+}
+*/
+
+
+
+
+footer {
+	background: #000;
+	padding: 20px 50px;
+	color: #fff;
+	font-family: Source Sans Pro;
+	font-size: 14px;
+}
